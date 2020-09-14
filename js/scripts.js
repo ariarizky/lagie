@@ -69,13 +69,13 @@ const teksBackground2 = document.getElementsByClassName("text-white-50 mx-auto m
 const tombol = document.getElementsByClassName("btn btn-primary js-scroll-trigger")[0];
 
 namaPerusahaan.innerHTML = 'PT HERALDI BAWANA INMARK';
-namaPerusahaan.style.color = ' #e6e6e6' ;
+//namaPerusahaan.style.color = ' #e6e6e6' ;
 profil.innerHTML = 'Profil';
-profil.style.color = '#e6e6e6';
+//profil.style.color = '#e6e6e6';
 produk.innerHTML = 'Produk'
-produk.style.color = '#e6e6e6';
+//produk.style.color = '#e6e6e6';
 kontak.innerHTML = 'Kontak';
-kontak.style.color = '#e6e6e6'
+//kontak.style.color = '#e6e6e6'
 teksBackground1.innerHTML = "L'agie ";
 teksBackground2.innerHTML = 'Chocolate for Every Moment';
 tombol.innerHTML = ' ';
@@ -85,10 +85,12 @@ tombol.removeAttribute('class');
 //Menambah navigasi
 const ul = document.getElementsByTagName('ul')[0];
 const liBaru = document.createElement('li');
-const teksNode = document.createTextNode('Belanja')
+const teksNode = document.createTextNode('Masuk')
 const ancBaru = document.createElement('a');
 
 liBaru.setAttribute('class','nav-item');
-liBaru.appendChild(teksNode);
-ul.appendChild(liBaru);
 ancBaru.setAttribute('class','nav-link js-scroll-trigger');
+ancBaru.setAttribute('href','login.html');
+ancBaru.appendChild(teksNode);
+liBaru.appendChild(ancBaru);
+ul.appendChild(liBaru);
