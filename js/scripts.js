@@ -94,3 +94,13 @@ ancBaru.setAttribute('href','login.html');
 ancBaru.appendChild(teksNode);
 liBaru.appendChild(ancBaru);
 ul.appendChild(liBaru);
+
+
+//Mengubah Section About
+const judulAbout = document.getElementsByClassName("text-white mb-4")[0];
+const pAbout = document.getElementById("paragraf-about");
+const fotoAbout = document.getElementsByClassName("col-lg-8 mx-auto")[0];
+
+
+judulAbout.innerHTML = "PT Heraldi Bawana Inmark";
+pAbout.innerHTML = "PT Heraldi Bawana Inmark merupakan perusahaan yang bergerak di bidang distribusi.<br>Untuk produk L'agie Chocolate"
